@@ -11,7 +11,7 @@ export function* fetchAppData() {
   }
 }
 
-// trigger fetchUser saga if 'FETCH_DATA' action is dispatched
+// trigger fetchAppData saga if 'FETCH_DATA' action is dispatched
 export function* watchFetchData() {
-  yield takeEvery('FETCH_DATA', fetchData);
+  yield takeEvery('FETCH_DATA', fetchAppData);
 }

@@ -1,3 +1,4 @@
+// @flow
 /*
  * action types
  */
@@ -17,7 +18,7 @@ export const fetchData = () => ({
 
 // updates the state when FETCH_DATA action succeeds
 // triggered by the fetchData Saga middleware
-export const receiveData = data => ({
+export const receiveData = (data: Object) => ({
   type: RECEIVE_DATA,
   data
 });
